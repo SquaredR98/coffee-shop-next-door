@@ -35,7 +35,7 @@ jobs:
                     COmment from an API not from Actions
                     '
         env: 
-          GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ORGANIZATION: ${{ github.event.organisation.login }}
           REPOSITORY: ${{ github.event.organisation.name }}
           ISSUE_NUMBER: ${{ github.event.organisation.name }}
